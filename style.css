@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 
 @theme{
-    --default-font: sans-serif;
-    --title-font: sans-serif;
+    --default-font: 'Outfit' , sans-serif;
+    --title-font: 'Montserrat' , sans-serif;
+    --special-font: 'Quicksand' , sans-serif;
 }
 
 :root{
-    --bg-color: #000;
-    --font-colot: #fff;
-    --graiandient: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
-    --color-g-1: #ff0000;
-    --color-g-2: #00ff00;
-    --color-g-btw: #0000ff;
+    --default-font: 'Outfit' , sans-serif;
+    --title-font: 'Montserrat' , sans-serif;
+    --special-font: 'Quicksand' , sans-serif;
+
+    --bg-color: #060f0e;
+    --font-color: #fff;
+    --color-g-1: #05386b;
+    --color-g-2: #5cdb95;
+    --color-g-btw: #318a80;
+    --gradient: linear-gradient(90deg, var(--color-g-1), var(--color-g-2));
 }
 
 *{
@@ -24,9 +29,26 @@ html, body {
     overflow-x: hidden !important;
 }
 
+.grid-bg-masked {
+  background-color: #0f172a;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: var(--default-font);
-    background-color: var();;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+section{
+    scroll-margin-top: 70px;
+}
+
+.full-img-shadow{
+    box-shadow: 0px 0px 50px 10px var(--color-g-btw);
 }
