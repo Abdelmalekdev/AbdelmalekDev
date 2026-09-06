@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+@theme{
+    --default-font: sans-serif;
+    --title-font: sans-serif;
+}
+
+:root{
+    --bg-color: #000;
+    --font-colot: #fff;
+    --graiandient: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+    --color-g-1: #ff0000;
+    --color-g-2: #00ff00;
+    --color-g-btw: #0000ff;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font);
+    background-color: var();;
+}
