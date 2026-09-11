@@ -11,7 +11,7 @@
     --title-font: 'Montserrat' , sans-serif;
     --special-font: 'Quicksand' , sans-serif;
 
-    --bg-color: #060f0e;
+    --bg-color: #0f172a;
     --font-color: #fff;
     --color-g-1: #05386b;
     --color-g-2: #5cdb95;
@@ -30,7 +30,6 @@ html, body {
 }
 
 .grid-bg-masked {
-  background-color: #0f172a;
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
@@ -49,6 +48,4 @@ section{
     scroll-margin-top: 70px;
 }
 
-.full-img-shadow{
-    box-shadow: 0px 0px 50px 10px var(--color-g-btw);
-}
+

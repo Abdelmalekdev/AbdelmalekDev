@@ -3,54 +3,209 @@
 <head class="grid-bg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="0f172a">
     <link rel="icon" type="image/x-icon" href="icons/webicon.ico">
+    <!--Fontawsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!--Tailwind css library-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--AOS library-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <title>Abelmalek Dev</title>
 </head>
-<body class="grid-bg-masked">
+<body class="grid-bg-masked relative">
 
+    <a href="#home" id="up-button"
+    class=" z-10 fixed bg-[var(--color-g-btw)] px-6 py-1 rounded-2xl bottom-6 right-6 text-center text-2xl opacity-0 pointer-events-none
+            transition-all duration-300 hover:bg-[var(--color-g-1)] hover:-translate-y-1 active:bg-[var(--color-g-1)] active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-solid fa-caret-up"></i></a>
 
+    <!--Navbar-->
+    <header id="navbar" class="z-10 w-full absolute transition-all duration-300">
 
-    <!--navbar-->
-    <header id="navbar" class="w-full fixed">
         <div class="flex justify-between items-center py-4 px-8 mx-auto max-w-screen-xl">
+
             <img src="img/amdevlb.svg" alt="" class="w-22">
-            <nav class="flex gap-12">
-                <a href="#home" class=" text-2xl">Home</a>
-                <a href="#home" class=" text-2xl">About</a>
-                <a href="#home" class=" text-2xl">Skills</a>
-                <a href="#home" class=" text-2xl">Service</a>
-                <a href="#home" class=" text-2xl">Projects</a>
+
+            <!--Besktop mode-->
+            <nav class="flex lg:gap-12 gap-6 max-md:hidden">
+                <a href="#home" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Home</a>
+                <a href="#about" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">About</a>
+                <a href="#skills" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Skills</a>
+                <a href="#services" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Service</a>
+                <a href="#projects" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Projects</a>
                 
             </nav> 
-            <a href="#home" class="text-2xl py-2 px-6 bg-[var(--color-g-btw)] rounded-4xl">Contact-me</a>
+
+            <a href="#contact" 
+            class="lg:text-xl text-lg py-2 px-6 bg-[var(--color-g-btw)] rounded-2xl max-md:hidden
+                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)]">Contact<span class="max-lg:hidden"> Me</span></a>
+
+            <!--Burger menu-->  
+            <button id="burger-button" 
+            class="text-4xl text-[var(--color-g-btw)] md:hidden 
+                    transition-all duration-300"><i class="fa-solid fa-bars"></i></button>       
+
         </div>
-    </header>
+        <!--Burger menu nav--> 
+        <nav id="burger-menu" class="flex flex-col w-full justify-center items-center text-center py-4 hidden bg-[var(--bg-color)]/80 backdrop-blur-sm shadow-xl">
+                <a id="burger-nav-link" href="#home" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Home</a>
+                <a id="burger-nav-link" href="#about" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">About</a>
+                <a id="burger-nav-link" href="#skills" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Skills</a>
+                <a id="burger-nav-link" href="#services" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Services</a>
+                <a id="burger-nav-link" href="#projects" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Projects</a>
+                <a id="burger-nav-link" href="#contact" 
+                class="text-2xl py-2 w-[90%] bg-[var(--color-g-btw)] rounded-2xl mt-4
+                        transition-all duration-200 hover:bg-[var(--color-g-1)] active:bg-[var(--color-g-1)] ">Contact Me</a>
+
+        </nav>
+
+</header>
 
     <!--Hero section-->
-    <main id="#home" class="flex items-center w-full min-h-[calc(100vh-80px)] mt-[80px] relative">
+    <main id="home" class="flex items-center w-full min-h-screen relative max-md:bg-[var(--bg-color)]/80 max-md:bg-[url('img/mewide.jpg')] max-md:bg-cover max-md:bg-center max-md:bg-no-repeat max-md:bg-blend-multiply">
 
-        <div class="flex justify-between gap-30 items-center p-12 max-w-screen-xl mx-auto">
-            <div class="flex flex-col gap-5">
-                <p class="text-xl ml-10">Hello , I am</p>
+        <!--Container-->
+        <div class="flex max-md:flex-col justify-center md:justify-between lg:gap-30 gap-5 items-center md:p-12 sm:px-12 px-4 max-w-screen-xl mx-auto min-h-[calc(100vh-70px)] mt-[70px]">
+            <!--Logo and presentation-->
+            <div class="flex flex-col max-md:justify-center max-md:items-center gap-5 max-md:min-h-[calc(100vh-80px)]">
+
+                <p class="text-xl max-sm:text-md md:ml-10">Hello! , I am</p>
+                <!--The logo-->
                 <img src="img/amdevlbword.svg" alt="" class="w-300">
-                <h3 class="text-4xl font-bold ml-10 mb-2 font-(family-name:--title-font)">Front-end Heavy developer</h3>
-                <p class="text-2xl font-medium ml-10 mb-5">A software eng student at usthb</p>
-                <div>
-                    <a href="" class="text-3xl ml-10 py-2 px-8 bg-[var(--color-g-btw)] rounded-4xl">Check my projects</a>
-                    <div>
-                        
+                <!--Work domain-->
+                <h3 class="sm:text-3xl lg:4xl text-xl font-bold md:ml-10 md:mb-2 font-(family-name:--title-font)">Front-end Heavy developer</h3>
+                <!--Slogan-->
+                <p class="sm:text-lg lg:text-xl md:ml-10 lg:mb-5">Building technology that respects the user—where values, quality, and individuality Unites</p>
+
+                <div class="flex max-lg:flex-col max-md:justify-center max-md:items-center max-lg:gap-5 md:ml-10">
+
+                    <!--Call to action button 'contact'-->
+                    <a href="#projects" 
+                    class="inline-block lg:text-xl text-lg py-3 px-8 bg-[var(--color-g-btw)] rounded-2xl max-lg:self-start shadow-[0_0_15px_var(--color-g-btw)]/50
+                            transition-all duration-300 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)] hover:shadow-[0_0_20px_var(--color-g-1)] active:shadow-[0_0_20px_var(--color-g-1)] active:bg-[var(--color-g-1)] active:transform-[scale(1.05)] ">Check my projects</a>
+
+                    <!--Social media icon links-->
+                    <div id="social-icons" class="grid grid-cols-3 md:ml-5 gap-6 mx-auto">
+                        <a href="" 
+                        class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
+                                transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)]  "><i class="fa-brands fa-github"></i></a>
+                        <a href="" 
+                        class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
+                                transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)]  "><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" 
+                        class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
+                                transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)] "><i class="fa-solid fa-envelope"></i></a>
                     </div>
+
                 </div>
+
             </div>
-            <img src="img/exa.jpg" alt="" class="rounded-full full-img-shadow w-100">
+
+            <!--Personal img-->
+            <img src="img/me.jpg" alt="" 
+            class="rounded-[25%] full-img-shadow shadow-[0px_0px_50px_var(--color-g-btw)] lg:w-100 w-90 max-md:hidden ring-15 ring-[var(--bg-color)]
+                    transition-all duration-300 hover:shadow-[0px_0px_60px_var(--color-g-btw)] hover:-translate-y-1">
         </div>
     </main>
+
+<!--About section-->
+<section id="about" class="w-full min-h-screen flex items-center py-16 relative">
+
+    <div class="flex flex-col justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
+
+        <!-- Section Title -->
+        <h1 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-12 text-white">
+            <i class="fa-solid fa-id-card-clip"></i> About Me
+        </h1>
+
+        <!-- Main Grid Container-->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full items-stretch">
+
+            <!-- Left Column: Story, Purpose & Approach (6 Columns) -->
+            <div class="lg:col-span-6 flex flex-col justify-between gap-6 text-slate-300  ">
+                
+                <div class="flex flex-col gap-5">
+                    <!-- Main Intro & Studies -->
+                    <p class="sm:text-2xl text-xl font-semibold leading-relaxed text-white">
+                        Hi, I'm <span class="text-[var(--color-g-btw)]">Abdelmalek MOGHRANI</span>, a Software Engineering student at USTHB dedicated to crafting simple, high-quality, and ethical digital experiences.
+                    </p>
+
+                    <!-- Core Purpose & Client-First Vision -->
+                    <p class="sm:text-lg text-base leading-relaxed text-slate-300">
+                        Unlike conventional practices that prioritize profit over experience, my goal is to genuinely <b class="text-white">improve people's lives</b> through technology. I focus on creating purposeful digital products by combining simplicity, quality, and beautiful custom designs.
+                    </p>
+
+                    <!-- Problem Solving & Adaptive Learning -->
+                    <p class="sm:text-lg text-base leading-relaxed text-slate-300">
+                        What I love most about software development is solving problems from scratch. I embrace a <b class="text-white">"Just-in-Time" learning mindset</b>—acquiring any technology required on the spot. By <b class="text-white">leveraging AI</b> as an accelerator for debugging and guidance, I keep my primary focus on high-level architecture and uncompromised quality.
+                    </p>
+                </div>
+
+                <!-- Action Button -->
+                <div class="pt-2 self-start">
+                    <a href="#contact" 
+                       class="inline-flex items-center gap-3 py-3 px-7 bg-[var(--color-g-1)]/60 border border-[var(--color-g-btw)]/40 text-lg text-white font-medium rounded-2xl transition-all duration-300 hover:bg-[var(--color-g-btw)] hover:border-[var(--color-g-btw)] hover:scale-105 hover:shadow-[0_0_15px_rgba(49,138,128,0.5)]">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Column-->
+            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+
+                <!-- Full-Width Card: Philosophy Quote -->
+                <div class="sm:col-span-2 p-6 bg-[var(--color-g-1)]/20 border-l-4 border-[var(--color-g-btw)] border-y border-r border-y-[var(--color-g-btw)]/20 border-r-[var(--color-g-btw)]/20 rounded-r-3xl backdrop-blur-md flex flex-col justify-center">
+                    <span class="text-[var(--color-g-btw)] font-mono text-sm uppercase tracking-wider">// Philosophy</span>
+                    <p class="text-base italic text-slate-100 mt-2">
+                        "Technology should improve people's lives, not ruin them. I build clean, reliable digital products where simplicity meets uncompromised quality."
+                    </p>
+                </div>
+
+                <!-- Card 1: Academic Track -->
+                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between text-[var(--color-g-btw)] font-mono text-sm mb-1">
+                            <span>// Education</span>
+                            <span class="bg-[var(--color-g-btw)]/20 text-[10px] px-2 py-0.5 rounded-full">In Progress</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mt-2">Software Engineering</h3>
+                        <p class="text-sm text-slate-300 mt-2 leading-relaxed">USTHB — Information Systems & Software Engineering (ISIL).</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Unique Design Approach -->
+                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 text-[var(--color-g-btw)] font-mono text-sm mb-1">
+                            <span>// UI Design</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mt-2">Unique UI & Identity</h3>
+                        <p class="text-sm text-slate-300 mt-2 leading-relaxed">Transforming popular trends into distinct, custom tailored designs reflecting project identity.</p>
+                    </div>
+                </div>
+
+                
+
+                <!-- Full-Width Bottom Card: Execution & AI -->
+                <div class="sm:col-span-2 p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+                    <div class="flex items-center gap-2 text-[var(--color-g-btw)] font-mono text-sm mb-1">
+                        <span>// Execution</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mt-2">Just-In-Time Learning & AI Accelerated</h3>
+                    <p class="text-sm text-slate-300 mt-2 leading-relaxed">Solving complex problems from scratch, learning new tools on demand, and leveraging AI to streamline workflow and maximize quality.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    
     
 </body>
 </html>
