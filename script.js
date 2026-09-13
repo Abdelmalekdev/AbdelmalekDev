@@ -62,3 +62,45 @@ window.addEventListener("scroll", function(){
 
     }
 })
+
+//CAROUSEL
+const carousel = document.getElementById("carousel-container");
+const carouselItems = carousel.children;
+const prevButton = document.getElementById("prev-btn");
+const nextButton = document.getElementById("next-btn");
+
+const gap = parseFloat(getComputedStyle(carousel).gap) || 0;
+const itemWidth = carouselItems[0].clientWidth + gap;
+
+let currentIndex = 0;
+
+prevButton.addEventListener("click", function(){
+    carousel.scrollBy({
+        left: -itemWidth,
+    })
+    currentIndex--;
+})
+
+nextButton.addEventListener("click", function(){
+    carousel.scrollBy({
+        left: itemWidth,
+    })
+     currentIndex++;
+})
+
+function updateButtonsState() {
+    const scrollLeft = carousel.scrollLeft;
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+    prevButton.disabled = scrollLeft <= 1;
+    prevButton.classList.toggle("opacity-40", prevButton.disabled);
+    prevButton.classList.toggle("cursor-not-allowed", prevButton.disabled);
+
+    nextButton.disabled = scrollLeft >= maxScrollLeft - 2;
+    nextButton.classList.toggle("opacity-40", nextButton.disabled);
+    nextButton.classList.toggle("cursor-not-allowed", nextButton.disabled);
+}
+
+carousel.addEventListener("scroll", updateButtonsState);
+updateButtonsState();
+

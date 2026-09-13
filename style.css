@@ -48,4 +48,8 @@ section{
     scroll-margin-top: 70px;
 }
 
+select option {
+    background-color: var(--bg-color) !important;
+    color: #ffffff !important;            
+}
 

@@ -19,7 +19,7 @@
 <body class="grid-bg-masked relative">
 
     <a href="#home" id="up-button"
-    class=" z-10 fixed bg-[var(--color-g-btw)] px-6 py-1 rounded-2xl bottom-6 right-6 text-center text-2xl opacity-0 pointer-events-none
+    class=" z-10 fixed bg-[var(--color-g-btw)] px-6 py-1 rounded-2xl bottom-6 right-6 text-center text-2xl opacity-0 pointer-events-none border border-white/10
             transition-all duration-300 hover:bg-[var(--color-g-1)] hover:-translate-y-1 active:bg-[var(--color-g-1)] active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-solid fa-caret-up"></i></a>
 
     <!--Navbar-->
@@ -29,23 +29,23 @@
 
             <img src="img/amdevlb.svg" alt="" class="w-22">
 
-            <!--Besktop mode-->
-            <nav class="flex lg:gap-12 gap-6 max-md:hidden">
-                <a href="#home" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Home</a>
-                <a href="#about" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">About</a>
-                <a href="#skills" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Skills</a>
-                <a href="#services" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Service</a>
-                <a href="#projects" class=" lg:text-2xl text-xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Projects</a>
+            <!--Desktop mode-->
+            <nav class="flex lg:gap-12 gap-6 max-lg:hidden"> 
+                <a href="#home" class=" text-2xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Home</a>
+                <a href="#about" class=" text-2xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">About</a>
+                <a href="#skills" class=" text-2xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Skills</a>
+                <a href="#capabilities" class=" text-2xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Capabilities</a>
+                <a href="#projects" class=" text-2xl rounded-md py-1 px-3 transition duration-300 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Projects</a>
                 
             </nav> 
 
             <a href="#contact" 
-            class="lg:text-xl text-lg py-2 px-6 bg-[var(--color-g-btw)] rounded-2xl max-md:hidden
-                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)]">Contact<span class="max-lg:hidden"> Me</span></a>
+            class="text-xl py-2 px-6 bg-[var(--color-g-btw)] rounded-2xl max-lg:hidden border border-white/10
+                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)]">Contact Me</a>
 
             <!--Burger menu-->  
             <button id="burger-button" 
-            class="text-4xl text-[var(--color-g-btw)] md:hidden 
+            class="text-4xl text-[var(--color-g-btw)] lg:hidden 
                     transition-all duration-300"><i class="fa-solid fa-bars"></i></button>       
 
         </div>
@@ -54,10 +54,10 @@
                 <a id="burger-nav-link" href="#home" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Home</a>
                 <a id="burger-nav-link" href="#about" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">About</a>
                 <a id="burger-nav-link" href="#skills" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Skills</a>
-                <a id="burger-nav-link" href="#services" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Services</a>
+                <a id="burger-nav-link" href="#capabilities" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Capabilities</a>
                 <a id="burger-nav-link" href="#projects" class=" text-2xl py-3 w-full transition-all duration-200 hover:bg-[var(--color-g-1)]/30 active:bg-[var(--color-g-1)]/30">Projects</a>
                 <a id="burger-nav-link" href="#contact" 
-                class="text-2xl py-2 w-[90%] bg-[var(--color-g-btw)] rounded-2xl mt-4
+                class="text-2xl py-2 w-[90%] bg-[var(--color-g-btw)] rounded-2xl mt-4 border border-white/10
                         transition-all duration-200 hover:bg-[var(--color-g-1)] active:bg-[var(--color-g-1)] ">Contact Me</a>
 
         </nav>
@@ -84,7 +84,7 @@
 
                     <!--Call to action button 'contact'-->
                     <a href="#projects" 
-                    class="inline-block lg:text-xl text-lg py-3 px-8 bg-[var(--color-g-btw)] rounded-2xl max-lg:self-start shadow-[0_0_15px_var(--color-g-btw)]/50
+                    class="inline-block lg:text-xl text-lg py-3 px-8 bg-[var(--color-g-btw)] rounded-2xl max-lg:self-start shadow-[0_0_15px_var(--color-g-btw)]/50 border border-white/10
                             transition-all duration-300 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)] hover:shadow-[0_0_20px_var(--color-g-1)] active:shadow-[0_0_20px_var(--color-g-1)] active:bg-[var(--color-g-1)] active:transform-[scale(1.05)] ">Check my projects</a>
 
                     <!--Social media icon links-->
@@ -112,14 +112,14 @@
     </main>
 
 <!--About section-->
-<section id="about" class="w-full min-h-screen flex items-center py-16 relative">
+<section id="about" class="w-full flex items-center py-14 relative">
 
     <div class="flex flex-col justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
 
         <!-- Section Title -->
-        <h1 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-12 text-white">
+        <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-12 text-white">
             <i class="fa-solid fa-id-card-clip"></i> About Me
-        </h1>
+        </h2>
 
         <!-- Main Grid Container-->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full items-stretch">
@@ -147,7 +147,8 @@
                 <!-- Action Button -->
                 <div class="pt-2 self-start">
                     <a href="#contact" 
-                       class="inline-flex items-center gap-3 py-3 px-7 bg-[var(--color-g-1)]/60 border border-[var(--color-g-btw)]/40 text-lg text-white font-medium rounded-2xl transition-all duration-300 hover:bg-[var(--color-g-btw)] hover:border-[var(--color-g-btw)] hover:scale-105 hover:shadow-[0_0_15px_rgba(49,138,128,0.5)]">
+                       class="inline-flex items-center gap-3 py-3 px-8 bg-[var(--color-g-btw)] border border-white/10 text-lg text-white font-medium rounded-2xl 
+                                transition-all duration-300 hover:bg-[var(--color-g-1)] hover:scale-105 hover:shadow-[0_0_15px_var(--color-g-1)]">
                         Contact Me
                     </a>
                 </div>
@@ -158,19 +159,20 @@
             <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
 
                 <!-- Full-Width Card: Philosophy Quote -->
-                <div class="sm:col-span-2 p-6 bg-[var(--color-g-1)]/20 border-l-4 border-[var(--color-g-btw)] border-y border-r border-y-[var(--color-g-btw)]/20 border-r-[var(--color-g-btw)]/20 rounded-r-3xl backdrop-blur-md flex flex-col justify-center">
-                    <span class="text-[var(--color-g-btw)] font-mono text-sm uppercase tracking-wider">// Philosophy</span>
+                <div class="sm:col-span-2 p-6 bg-[var(--color-g-1)]/20 border-l-4 border-[var(--color-g-2)] border-y border-r border-y-[var(--color-g-btw)]/20 border-r-[var(--color-g-btw)]/20 rounded-r-3xl backdrop-blur-sm flex flex-col justify-center">
+                    <p class="text-[var(--color-g-2)] font-mono text-sm uppercase tracking-wider">// Philosophy</p>
                     <p class="text-base italic text-slate-100 mt-2">
                         "Technology should improve people's lives, not ruin them. I build clean, reliable digital products where simplicity meets uncompromised quality."
                     </p>
                 </div>
 
                 <!-- Card 1: Academic Track -->
-                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
+                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-sm 
+                            transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between text-[var(--color-g-btw)] font-mono text-sm mb-1">
-                            <span>// Education</span>
-                            <span class="bg-[var(--color-g-btw)]/20 text-[10px] px-2 py-0.5 rounded-full">In Progress</span>
+                        <div class="flex items-center justify-between text-[var(--color-g-2)] font-mono text-sm mb-1">
+                            <p>// Education</p>
+                            <span class="bg-[var(--color-g-btw)]/20 text-[10px] px-2 py-0.5 rounded-full border border-[var(--color-g-2)]/30">In Progress</span>
                         </div>
                         <h3 class="text-lg font-bold text-white mt-2">Software Engineering</h3>
                         <p class="text-sm text-slate-300 mt-2 leading-relaxed">USTHB — Information Systems & Software Engineering (ISIL).</p>
@@ -178,10 +180,11 @@
                 </div>
 
                 <!-- Card 2: Unique Design Approach -->
-                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
+                <div class="p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-sm
+                            transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center gap-2 text-[var(--color-g-btw)] font-mono text-sm mb-1">
-                            <span>// UI Design</span>
+                        <div class="flex items-center gap-2 text-[var(--color-g-2)] font-mono text-sm mb-1">
+                            <p>// UI Design</p>
                         </div>
                         <h3 class="text-lg font-bold text-white mt-2">Unique UI & Identity</h3>
                         <p class="text-sm text-slate-300 mt-2 leading-relaxed">Transforming popular trends into distinct, custom tailored designs reflecting project identity.</p>
@@ -191,9 +194,10 @@
                 
 
                 <!-- Full-Width Bottom Card: Execution & AI -->
-                <div class="sm:col-span-2 p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-md transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
-                    <div class="flex items-center gap-2 text-[var(--color-g-btw)] font-mono text-sm mb-1">
-                        <span>// Execution</span>
+                <div class="sm:col-span-2 p-5 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-3xl backdrop-blur-sm 
+                            transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+                    <div class="flex items-center gap-2 text-[var(--color-g-2)] font-mono text-sm mb-1">
+                        <p>// Execution</p>
                     </div>
                     <h3 class="text-lg font-bold text-white mt-2">Just-In-Time Learning & AI Accelerated</h3>
                     <p class="text-sm text-slate-300 mt-2 leading-relaxed">Solving complex problems from scratch, learning new tools on demand, and leveraging AI to streamline workflow and maximize quality.</p>
@@ -205,6 +209,512 @@
 
     </div>
 </section>
+
+<!-- Skills section -->
+<section id="skills" class="w-full py-14 relative">
+    <!-- Container -->
+    <div class="flex flex-col justify-center items-center max-w-screen-xl mx-auto px-6">
+        <!-- Section title -->
+        <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] text-white">
+            <i class="fa-solid fa-list-check"></i> My Skills
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mb-12 mt-4 text-center max-w-xl">
+            A transparent breakdown of my technical capabilities and current learning trajectory.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 mb-10 p-3 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm text-xs">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-g-2)] shadow-[0_0_8px_var(--color-g-btw)]"></span>
+                <p class="text-slate-200 font-medium">Job Target / Production</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]"></span>
+                <p class="text-slate-200 font-medium">Personal Projects</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.6)]"></span>
+                <p class="text-slate-200 font-medium">Currently Learning</p>
+            </div>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+
+            <!-- Front-End Core -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center border-b border-[var(--color-g-btw)]/20 pb-2">
+                    <p>Front-end Core</p>
+                </h3>
+                <div class="flex flex-col gap-3">
+                    
+                    <!-- HTML5 / CSS3 -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-html5 text-orange-500 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">HTML5 & CSS3</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-[var(--color-g-btw)]/20 text-[var(--color-g-2)] border border-[var(--color-g-2)]/30">
+                            Job Target
+                        </span>
+                    </div>
+
+                    <!-- Tailwind CSS -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-wind text-sky-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">Tailwind CSS</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-[var(--color-g-btw)]/20 text-[var(--color-g-2)] border border-[var(--color-g-2)]/30">
+                            Job Target
+                        </span>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-js text-yellow-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">Vanilla JavaScript</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                            Projects
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Backend & BaaS -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center border-b border-[var(--color-g-btw)]/20 pb-2">
+                    <p>Backend & Cloud</p>
+                </h3>
+                <div class="flex flex-col gap-3">
+
+                    <!-- Supabase -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-database text-emerald-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">Supabase (BaaS)</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-300 border border-sky-400/30">
+                            Learning
+                        </span>
+                    </div>
+
+                    <!-- Python / Flask -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-python text-blue-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">Python / Flask</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-300 border border-sky-400/30">
+                            Learning
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CS & Side Explorations -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm">
+                <h3 class="text-lg font-bold text-white mb-4 flex items-center border-b border-[var(--color-g-btw)]/20 pb-2">
+                    <p>Computer Science & Tools</p>
+                </h3>
+                <div class="flex flex-col gap-3">
+
+                    <!-- Git & GitHub -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-github text-slate-200 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">Git & Github</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-[var(--color-g-btw)]/20 text-[var(--color-g-2)] border border-[var(--color-g-2)]/30">
+                            Job Target
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">AI-Accelerated Workflow</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-[var(--color-g-btw)]/20 text-[var(--color-g-2)] border border-[var(--color-g-2)]/30">
+                            Job Target
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Capabilities section-->
+<section id="capabilities" class="w-full py-16 relative">
+    <div class="flex flex-col justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
+
+        <!-- Section Title -->
+        <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-4 text-white">
+            <i class="fa-solid fa-cubes"></i> What I Can Build
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mb-12 text-center max-w-xl">
+            Translating core engineering principles and modern web tech into functional, high-value digital solutions.
+        </p>
+
+        <!-- Capabilities Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+
+            <!-- Card 1 -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-[var(--color-g-btw)]/20 border border-[var(--color-g-btw)]/40 flex items-center justify-center text-[var(--color-g-2)] text-2xl mb-4">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Responsive Web Interfaces</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Building structured, fast, and fully responsive websites that adapt flawlessly across desktop, tablet, and mobile screens using Tailwind CSS.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-[var(--color-g-btw)]/20 border border-[var(--color-g-btw)]/40 flex items-center justify-center text-[var(--color-g-2)] text-2xl mb-4">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Interactive Web Logic</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Creating interactive user experiences, dynamic UI components, and client-side application logic built purely with Vanilla JavaScript.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-[var(--color-g-btw)]/20 border border-[var(--color-g-btw)]/40 flex items-center justify-center text-[var(--color-g-2)] text-2xl mb-4">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Custom Component Design</h3>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Crafting modern, non-repetitive UI layouts (like Bento Grids) with clean spacing, accessibility, and subtle glassmorphic aesthetic effects.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="w-full py-16 relative">
+    <div class="flex flex-col gap-6 justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
+        <!-- Sectio Title-->
+        <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-4 text-white">
+           <i class="fa-solid fa-code-branch"></i> Portfolio
+        </h2>
+        <!-- Carousel Buttons + Text-->
+        <div class="flex items-center justify-between w-full">
+            <h3 class="text-4xl font-semibold">My Projects</h3>
+
+            <div class="grid grid-cols-2 gap-4">
+                <button id="prev-btn" class="flex justify-center items-center w-11 h-11 bg-[var(--color-g-btw)] rounded-full group transition-all duration-200 active:bg-[var(--color-g-1)]"><i class="fa-solid fa-arrow-left transition-all duration-200 group-hover:-translate-x-1"></i></button>
+                <button id="next-btn" class="flex justify-center items-center w-11 h-11 bg-[var(--color-g-btw)] rounded-full group transition-all duration-200 active:bg-[var(--color-g-1)]"><i class="fa-solid fa-arrow-right transition-all duration-200 group-hover:translate-x-1"></i></button>
+            </div>
+
+        </div>
+        <!--The Carousel-->
+        <div id="carousel-container" class=" snap-x snap-mandatory no-scrollbar overflow-x-hidden overflow-x-auto  scroll-smooth snap-mandatory touch-pan-x w-full flex gap-6 transition-all duration-500 ease-in-out">
+
+            <!-- Card 1-->
+            <div class=" flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-sm mx-2"></i></a>
+                        <a href="" 
+                            class="text-lg py-1 px-2 bg-[var(--bg-color)]/80 border border-white/10 backdrop-blur-sm rounded-xl w-full 
+                                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]
+                                    active:bg-[var(--color-g-1)] active:scale-110 active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-brands fa-github mx-1"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+
+
+            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6">
+                    <div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                    </div>
+                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
+                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
+                    <div class="flex justify-between text-center gap-6 items-center mt-3">
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
+                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
+                    </div> 
+                </div>
+
+                </div>
+            </div>
+
+    </div>
+</section>
+
+<!-- Contact Section-->
+<section id="contact" class="w-full py-16 relative">
+    <div class="flex flex-col gap-6 justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
+        <!-- Section Title-->
+        <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-4 text-white">
+           <i class="fa-solid fa-envelope"></i> Contact Me
+        </h2>
+
+        <!-- The Right Side:Contact Info -->
+        <div class="grid lg:grid-cols-2 gap-12 bg-[var(--color-g-1)]/20 backdrop-blur-sm md:p-8 p-4 rounded-2xl">
+            <div class="flex flex-col">
+                
+                <div>
+                    <h3 class=" text-[var(--color-g-btw)] md:text-lg text-xs uppercase font-semibold font-(family-name:--title-font) my-2">
+                        get in toch
+                    </h3>
+                    <h4 class="text-xl md:text-2xl font-bold text-white mb-3 leading-snug">
+                        Have a question, an idea, or a project in mind ?
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                        Whether you have a technical question, want to discuss software development, collaborate on an idea, or explore project opportunities—my inbox is always open.
+                    </p>
+                </div>
+
+
+                <div class="grid grid-cols-2 gap-3 my-6">
+                    <!-- Timezone-->
+                    
+                    <div class="p-3.5 rounded-2xl bg-black/20 border border-white/10 flex flex-col gap-1">
+                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-globe text-xs text-[var(--color-g-2)]"></i> Timezone
+                        </span>
+                        <span class="text-xs font-semibold text-slate-200">WAT (UTC+1)</span>
+                    </div>
+
+                    <!-- Response Time-->
+                    <div class="p-3.5 rounded-2xl bg-black/20 border border-white/10 flex flex-col gap-1">
+                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-clock-rotate-left text-xs text-[var(--color-g-2)]"></i> Response Time
+                        </span>
+                        <span class="text-xs font-semibold text-slate-200">Within 24-48 Hours</span>
+                    </div>
+
+                    <!-- Languages To Use In The Email -->
+                    <div class="col-span-2 p-3.5 rounded-2xl bg-black/20 border border-white/10 flex items-center justify-between">
+                        <span class="text-[10px] text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-language text-xs text-[var(--color-g-2)]"></i> Languages
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-g-2)]">
+                            <span class="w-2 h-2 rounded-full bg-[var(--color-g-2)] animate-pulse"></span>
+                            English, Arabic, French
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Quick Links-->
+                <div class="py-4 lg:border-t max-lg:border-b border-white/10 flex flex-col gap-3 lg:mt-auto">
+                    <p class="ml-2 text-[11px] text-slate-300 uppercase tracking-wider">Direct Reach</p>
+                    
+                    <div class="flex flex-wrap items-center gap-3">
+                        <!-- Email -->
+                        <a href="mailto:your-email@domain.com" 
+                            class="flex-1 min-w-[180px] p-3 rounded-xl bg-[var(--bg-color)] border border-white/5 flex items-center justify-between group
+                                    transition-all duration-200 hover:border-[var(--color-g-btw)]/40 hover:bg-[var(--color-g-1)] hover:scale-105 
+                                    active:border-[var(--color-g-btw)]/40 active:bg-[var(--color-g-1)] active:scale-105 ">
+                            <div class="flex items-center gap-2.5">
+                                <i class="fa-solid fa-envelope text-slate-300 text-sm"></i>
+                                <span class="text-xs text-slate-300 group-hover:text-white">Direct Email</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-[var(--color-g-2)] transition-colors"></i>
+                        </a>
+                        <!-- Github Account-->
+                        <a href="https://github.com" 
+                            class="p-3 rounded-xl bg-[var(--bg-color)] border border-white/10 flex items-center gap-2 text-slate-300
+                                    transition-all duration-200 hover:border-[var(--color-g-btw)]/40 hover:bg-[var(--color-g-1)] hover:scale-105 hover:text-white 
+                                    active:border-[var(--color-g-btw)]/40 active:bg-[var(--color-g-1)] active:scale-105 active:text-white ">
+                            <i class="fa-brands fa-github text-sm"></i>
+                            <span class="text-xs">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact form-->
+             <form 
+                class="grid grid-cols-2 gap-4 max-lg:pt-4 max-lg:border-t max-lg:border-white/10">
+                <!-- sender Name -->
+                <div class="w-full max-md:col-span-2">
+                    <label class="uppercase ml-2 text-sm font-semibold text-slate-300">full name</label>
+                    <input type="text" name="Full Name" placeholder="John Doe" required 
+                        class="mt-2 bg-[var(--bg-color)] border border-white/10 py-3 px-4 rounded-xl w-full transition-all duration-200 hover:scale-105 focus:scale-105 focus:ring focus:ring-[var(--color-g-btw)]/80 focus:outline-none focus:bg-[var(--color-g-1)]/20   ">
+                </div>
+                <!-- sender Email -->
+                <div class="w-full max-md:col-span-2">
+                    <label class="uppercase ml-2 text-sm font-semibold text-slate-300">email</label>
+                    <input type="text" name="email" placeholder="john@email.com" required 
+                        class="mt-2 bg-[var(--bg-color)] border border-white/10 py-3 px-4 rounded-xl w-full transition-all duration-200 hover:scale-105 focus:scale-105 focus:ring focus:ring-[var(--color-g-btw)]/80 focus:outline-none focus:bg-[var(--color-g-1)]/20">
+                </div>
+                <!-- sender Phone -->
+                <div class="w-full col-span-2">
+                    <label class="uppercase ml-2 text-sm font-semibold text-slate-300">Phone (optional)</label>
+                    <input type="tel" name="Phone" placeholder="+213 XX XX XX XX" 
+                        class="mt-2 bg-[var(--bg-color)] border border-white/10 py-3 px-4 rounded-xl w-full transition-all duration-200 hover:scale-105 focus:scale-105 focus:ring focus:ring-[var(--color-g-btw)]/80 focus:outline-none focus:bg-[var(--color-g-1)]/20">
+                </div>
+                <!-- Message Theme -->
+                <div class="col-span-2">
+                    <label class="uppercase ml-2 text-sm font-semibold text-slate-300">Service
+                        Needed</label>
+                    <select name="Message Theme" required
+                        class=" w-full px-4 py-3 rounded-xl border border-white/10 bg-[var(--bg-color)] text-sm
+                        hover:outline-none hover:ring hover:ring-[var(--color-g-btw)]/80
+                        focus:outline-none focus:bg-[var(--color-g-1)]/20 focus:ring focus:ring-[var(--color-g-btw)]/80 transition appearance-none">
+                        <option value="" disabled selected hidden>▼ Message Theme  </option>
+                        <option >General Question</option>
+                        <option>Tech Discussion</option>
+                        <option >Projects & Hiring</option>
+                    </select>
+                </div>
+                <!-- The Message -->
+                <div class="w-full col-span-2">
+                    <label class="uppercase ml-2 text-sm font-semibold text-slate-300">the message</label>
+                    <textarea name="The Message" placeholder="Tell me about your project..." 
+                        class="mt-2 bg-[var(--bg-color)] border border-white/10 py-3 px-4 rounded-xl w-full transition-all duration-200 hover:scale-105 focus:scale-105 focus:ring focus:ring-[var(--color-g-btw)]/80 focus:outline-none focus:bg-[var(--color-g-1)]/20 h-25"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit" 
+                    class="font-medium text-lg col-span-2 rounded-xl py-1 px-2 bg-[var(--color-g-btw)] border border-white/10 
+                            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-105 
+                            active:bg-[var(--color-g-1)] active:scale-105">
+                    Send Message
+                </button>
+
+             </form>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="w-full mt-20 border-t border-white/5 bg-[var(--color-g-1)]/10 backdrop-blur-md py-8 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
+        
+        <!-- Logo & Copyrights-->
+        <div class="flex items-center gap-6 text-slate-300 justify-center md:justify-start">
+            <img src="img/amdevlb.svg" alt="" class="w-20">
+            <p>&copy; <span id="year">2026</span> Abdelmalek Dev</p>
+        </div>
+
+        <!-- Website Built Using ... -->
+        <div class="text-slate-400 text-center flex items-center justify-center gap-1.5 bg-[var(--bg-color)] px-4 py-2 rounded-full border border-white/10">
+            <span>Built with</span>
+            <span class="text-slate-200 font-medium">Tailwind CSS</span>
+            <span>&amp;</span>
+            <span class="text-slate-200 font-medium">Vanilla JS</span>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex items-center gap-5 text-slate-300">
+            <a href="https://github.com" target="_blank" aria-label="GitHub" class="hover:text-[var(--color-g-btw)] transition-colors p-1">
+                <i class="fa-brands fa-github text-lg"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="hover:text-[var(--color-g-btw)] transition-colors p-1">
+                <i class="fa-brands fa-linkedin text-lg"></i>
+            </a>
+            
+            <div class="w-px h-4 bg-white/10"></div>
+
+            <!-- Linktree -->
+            <a href="" 
+                class="border border-white/10 bg-[var(--bg-color)] rounded-md p-2
+                transition-all duration-200 hover:bg-[var(--color-g-1)] active:bg-[var(--color-g-1)]"><i class="fa-solid fa-share-nodes"></i></a>
+
+        </div>
+
+    </div>
+</footer>
     
     
 </body>
