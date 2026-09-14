@@ -6,7 +6,7 @@
     <meta name="theme-color" content="0f172a">
     <link rel="icon" type="image/x-icon" href="icons/webicon.ico">
     <!--Fontawsome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <!--Tailwind css library-->
@@ -19,8 +19,8 @@
 <body class="grid-bg-masked relative">
 
     <a href="#home" id="up-button"
-    class=" z-10 fixed bg-[var(--color-g-btw)] px-6 py-1 rounded-2xl bottom-6 right-6 text-center text-2xl opacity-0 pointer-events-none border border-white/10
-            transition-all duration-300 hover:bg-[var(--color-g-1)] hover:-translate-y-1 active:bg-[var(--color-g-1)] active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-solid fa-caret-up"></i></a>
+    class=" z-10 fixed bg-[var(--color-g-btw)] max-md:bottom-6 px-4 py-2 rounded-full right-6 text-center text-2xl opacity-0 pointer-events-none border border-white/10
+            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:-translate-y-1 active:bg-[var(--color-g-1)] active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-solid fa-caret-up"></i></a>
 
     <!--Navbar-->
     <header id="navbar" class="z-10 w-full absolute transition-all duration-300">
@@ -76,7 +76,7 @@
                 <!--The logo-->
                 <img src="img/amdevlbword.svg" alt="" class="w-300">
                 <!--Work domain-->
-                <h3 class="sm:text-3xl lg:4xl text-xl font-bold md:ml-10 md:mb-2 font-(family-name:--title-font)">Front-end Heavy developer</h3>
+                <h3 class="sm:text-3xl lg:4xl text-xl font-bold md:ml-10 md:mb-2 font-(family-name:--title-font)">Front-end developer</h3>
                 <!--Slogan-->
                 <p class="sm:text-lg lg:text-xl md:ml-10 lg:mb-5">Building technology that respects the user—where values, quality, and individuality Unites</p>
 
@@ -88,16 +88,13 @@
                             transition-all duration-300 hover:bg-[var(--color-g-1)] hover:transform-[scale(1.05)] hover:shadow-[0_0_20px_var(--color-g-1)] active:shadow-[0_0_20px_var(--color-g-1)] active:bg-[var(--color-g-1)] active:transform-[scale(1.05)] ">Check my projects</a>
 
                     <!--Social media icon links-->
-                    <div id="social-icons" class="grid grid-cols-3 md:ml-5 gap-6 mx-auto">
-                        <a href="" 
+                    <div id="social-icons" class="grid grid-cols-2 md:ml-5 gap-6 mx-auto">
+                        <a href="https://github.com/Abdelmalekdev" 
                         class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
                                 transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)]  "><i class="fa-brands fa-github"></i></a>
-                        <a href="" 
+                        <a href="https://www.linkedin.com/in/abdelmalek-moghrani-25543335a/" 
                         class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
                                 transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)]  "><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="" 
-                        class="flex justify-center items-center w-11 h-11 sm:w-13 sm:h-13 text-xl rounded-full border border-[var(--color-g-btw)] backdrop-blur-sm
-                                transition-all duration-300 hover:text-[var(--color-g-btw)] hover:shadow-[0_0_15px_var(--color-g-btw)] "><i class="fa-solid fa-envelope"></i></a>
                     </div>
 
                 </div>
@@ -106,7 +103,7 @@
 
             <!--Personal img-->
             <img src="img/me.jpg" alt="" 
-            class="rounded-[25%] full-img-shadow shadow-[0px_0px_50px_var(--color-g-btw)] lg:w-100 w-90 max-md:hidden ring-15 ring-[var(--bg-color)]
+            class="rounded-full full-img-shadow shadow-[0px_0px_50px_var(--color-g-btw)] lg:w-100 w-90 max-md:hidden ring-15 ring-[var(--bg-color)]
                     transition-all duration-300 hover:shadow-[0px_0px_60px_var(--color-g-btw)] hover:-translate-y-1">
         </div>
     </main>
@@ -221,6 +218,7 @@
         <p class="text-slate-300 text-sm sm:text-base mb-12 mt-4 text-center max-w-xl">
             A transparent breakdown of my technical capabilities and current learning trajectory.
         </p>
+        <!-- Section Guide-->
         <div class="flex flex-wrap items-center justify-center gap-4 mb-10 p-3 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm text-xs">
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-[var(--color-g-2)] shadow-[0_0_8px_var(--color-g-btw)]"></span>
@@ -247,7 +245,8 @@
                 <div class="flex flex-col gap-3">
                     
                     <!-- HTML5 / CSS3 -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40 ">
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-html5 text-orange-500 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">HTML5 & CSS3</p>
@@ -258,7 +257,8 @@
                     </div>
 
                     <!-- Tailwind CSS -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-wind text-sky-400 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">Tailwind CSS</p>
@@ -269,7 +269,8 @@
                     </div>
 
                     <!-- JavaScript -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-js text-yellow-400 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">Vanilla JavaScript</p>
@@ -289,8 +290,21 @@
                 </h3>
                 <div class="flex flex-col gap-3">
 
+                    <!-- SQL -->
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-server text-amber-400 text-xl"></i>
+                            <p class="text-sm font-semibold text-slate-200">SQL / PostgreSQL</p>
+                        </div>
+                        <span class="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-300 border border-sky-400/30">
+                            Learning
+                        </span>
+                    </div>
+
                     <!-- Supabase -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-database text-emerald-400 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">Supabase (BaaS)</p>
@@ -301,7 +315,8 @@
                     </div>
 
                     <!-- Python / Flask -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-python text-blue-400 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">Python / Flask</p>
@@ -322,7 +337,8 @@
                 <div class="flex flex-col gap-3">
 
                     <!-- Git & GitHub -->
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-brands fa-github text-slate-200 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">Git & Github</p>
@@ -331,7 +347,8 @@
                             Job Target
                         </span>
                     </div>
-                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 hover:border-[var(--color-g-btw)]/40 transition-all">
+                    <div class="flex items-center justify-between p-3 bg-[var(--color-g-1)]/30 rounded-xl border border-white/5 
+                                transition-all duration-200 hover:border-[var(--color-g-btw)]/40">
                         <div class="flex items-center gap-3">
                             <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-xl"></i>
                             <p class="text-sm font-semibold text-slate-200">AI-Accelerated Workflow</p>
@@ -366,7 +383,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
 
             <!-- Card 1 -->
-            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
+            <div class="p-6 bg-[var(--color-g-1)]/20 border border-[var(--color-g-btw)]/20 rounded-2xl backdrop-blur-sm 
+                        transition-all duration-300 hover:border-[var(--color-g-btw)]/60 hover:-translate-y-1">
                 <div class="w-12 h-12 rounded-xl bg-[var(--color-g-btw)]/20 border border-[var(--color-g-btw)]/40 flex items-center justify-center text-[var(--color-g-2)] text-2xl mb-4">
                     <i class="fa-solid fa-desktop"></i>
                 </div>
@@ -403,9 +421,10 @@
     </div>
 </section>
 
+<!-- Projects Section-->
 <section id="projects" class="w-full py-16 relative">
     <div class="flex flex-col gap-6 justify-center items-center max-w-screen-xl mx-auto px-6 w-full">
-        <!-- Sectio Title-->
+        <!-- Section Title-->
         <h2 class="sm:text-5xl text-4xl font-bold font-(family-name:--title-font) drop-shadow-[0_0_12px_rgba(49,138,128,0.4)] mb-4 text-white">
            <i class="fa-solid fa-code-branch"></i> Portfolio
         </h2>
@@ -428,15 +447,109 @@
                 <div class="aspect-video  overflow-hidden">
                     <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
                 </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                <div class="flex flex-col gap-4 p-6 flex-1 ">
+
+                    <div class="flex flex-col gap-4 flex-1">
+                        <div>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-orange-300 bg-orange-400/20 rounded-full border border-orange-400/30 ">HTML5 & CSS3</span>
+                        </div>
+
+                        <h3 class=" text-3xl font-medium transition-all duration-200 group-hover:ml-2">Pizza Restaurant Webpage</h3>
+                        <p class=" text-xs text-slate-300">A modern, fully responsive landing page for a specialized restaurant. Focused on clean semantic HTML structure, elegant CSS styling, smooth layout transitions, and an engaging visual hierarchy designed to showcase menus and promotional deals.</p>
                     </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-sm mx-2"></i></a>
-                        <a href="" 
+
+                    <div class=" flex justify-between text-center gap-4 items-center pt-2 mt-auto">
+                        <a href="https://abdelmalekdev.github.io/pizza-restaurant/" 
+                            class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 
+                            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-xs mx-2"></i></a>
+                        <a href="https://github.com/Abdelmalekdev/pizza-restaurant" 
+                            class="text-lg py-1 px-2 bg-[var(--bg-color)]/80 border border-white/10 backdrop-blur-sm rounded-xl w-full 
+                                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]
+                                    active:bg-[var(--color-g-1)] active:scale-110 active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-brands fa-github mx-1"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Card 2-->
+            <div class=" flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/xo.png" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6 flex-1">
+
+                    <div class="flex flex-col gap-4 flex-1">
+                        <div>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-orange-300 bg-orange-400/20 rounded-full border border-orange-400/30 ">HTML5 & CSS3</span>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-sky-300 bg-sky-400/20 rounded-full border border-sky-400/30 ">Tailwind CSS</span>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                        </div>
+                        <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Tic Tac Toe Game</h3>
+                        <p class="text-xs text-slate-300">A clean and interactive browser game engineered using Vanilla JavaScript. Features real-time state management, win/draw condition checking, dynamic player turn indicators, and responsive UI feedback with zero external libraries.</p>
+                    </div> 
+
+                    <div class="flex justify-between text-center gap-4 items-center mt-auto pt-2">
+                        <a href="https://abdelmalekdev.github.io/Tic-Tac-Toe-game/" 
+                            class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 
+                            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-xs mx-2"></i></a>
+                        <a href="https://github.com/Abdelmalekdev/Tic-Tac-Toe-game" 
+                            class="text-lg py-1 px-2 bg-[var(--bg-color)]/80 border border-white/10 backdrop-blur-sm rounded-xl w-full 
+                                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]
+                                    active:bg-[var(--color-g-1)] active:scale-110 active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-brands fa-github mx-1"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Card 3-->
+            <div class=" flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/pms.png" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6 flex-1">
+
+                    <div class="flex flex-col gap-4 flex-1">
+                        <div>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-orange-300 bg-orange-400/20 rounded-full border border-orange-400/30 ">HTML5 & CSS3</span>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
+                        </div>
+                        <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Product Management System</h3>
+                        <p class="text-xs text-slate-300">A high-efficiency client-side CRUD web app built with Vanilla JS to streamline inventory workflows. Features real-time price & tax calculations, batch item creation, instantaneous search filtering by title/category, and persistent storage via LocalStorage.</p>
+                    </div> 
+
+                    <div class="flex justify-between text-center gap-4 items-center mt-auto pt-2">
+                        <a href="https://abdelmalekdev.github.io/Product-Management-System/" 
+                            class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 
+                            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-xs mx-2"></i></a>
+                        <a href="https://github.com/Abdelmalekdev/Product-Management-System" 
+                            class="text-lg py-1 px-2 bg-[var(--bg-color)]/80 border border-white/10 backdrop-blur-sm rounded-xl w-full 
+                                    transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]
+                                    active:bg-[var(--color-g-1)] active:scale-110 active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-brands fa-github mx-1"></i> Github</a>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Card 3-->
+            <div class=" flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
+                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
+                <div class="aspect-video  overflow-hidden">
+                    <img src="img/efect.png" alt="" class="transition-all duration-400 group-hover:scale-105">
+                </div>
+                <div class="flex flex-col gap-4 p-6 flex-1">
+
+                    <div class="flex flex-col gap-4 flex-1">
+                        <div>
+                            <span class="text-[10px] font-mono font-medium px-2 py-1 mx-1 text-orange-300 bg-orange-400/20 rounded-full border border-orange-400/30 ">HTML5 & CSS3</span>
+                        </div>
+                        <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Solar System Presentation</h3>
+                        <p class="text-xs text-slate-300 ">An engaging educational visualizer showcasing solar system dynamics. Built using pure CSS keyframe animations and JavaScript to render dynamic planetary orbits, speed ratios, and responsive spatial relationships across mobile and desktop viewports.</p>
+                    </div> 
+
+                    <div class="flex justify-between text-center gap-4 items-center mt-auto pt-2">
+                        <a href="https://abdelmalekdev.github.io/The-Solar-System/" 
+                            class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full border border-white/10 
+                            transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]">View Project <i class="fa-solid fa-arrow-up-right-from-square text-xs mx-2"></i></a>
+                        <a href="https://github.com/Abdelmalekdev/The-Solar-System" 
                             class="text-lg py-1 px-2 bg-[var(--bg-color)]/80 border border-white/10 backdrop-blur-sm rounded-xl w-full 
                                     transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-1)]
                                     active:bg-[var(--color-g-1)] active:scale-110 active:shadow-[0_0_10px_var(--color-g-1)]"><i class="fa-brands fa-github mx-1"></i> Github</a>
@@ -445,93 +558,7 @@
             </div>
 
 
-            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
-                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
-                <div class="aspect-video  overflow-hidden">
-                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
-                </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
-                    </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
-                    </div> 
-                </div>
-            </div>
-            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
-                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
-                <div class="aspect-video  overflow-hidden">
-                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
-                </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
-                    </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
-                    </div> 
-                </div>
-            </div>
-            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
-                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
-                <div class="aspect-video  overflow-hidden">
-                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
-                </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
-                    </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
-                    </div> 
-                </div>
-            </div>
-            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
-                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
-                <div class="aspect-video  overflow-hidden">
-                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
-                </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
-                    </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
-                    </div> 
-                </div>
-            </div>
-            <div class="flex flex-col overflow-hidden snap-start shrink-0 scroll-ml-[0.5px] w-full md:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)] border border-[var(--color-g-btw)]/20 rounded-2xl bg-[var(--color-g-1)]/20 backdrop-blur-sm group
-                        transition-all duration-200 hover:border-[var(--color-g-btw)]/60">
-                <div class="aspect-video  overflow-hidden">
-                    <img src="img/pizza.jpg" alt="" class="transition-all duration-400 group-hover:scale-105">
-                </div>
-                <div class="flex flex-col gap-4 p-6">
-                    <div>
-                        <span class="text-[10px] font-mono font-medium px-2 py-1 text-amber-300 bg-amber-400/20 rounded-full border border-amber-400/30 ">JavaScript</span>
-                    </div>
-                    <h3 class="text-3xl font-medium transition-all duration-200 group-hover:ml-2">Title 5</h3>
-                    <p class="text-sm text-slate-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi saepe.</p>
-                    <div class="flex justify-between text-center gap-6 items-center mt-3">
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-btw)] rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]">View Project</a>
-                        <a href="" class="text-lg py-1 px-2 bg-[var(--color-g-1)]/80 border border-[var(--color-g-2)]/30 backdrop-blur-sm rounded-xl w-full transition-all duration-200 hover:bg-[var(--color-g-2)]/60 hover:scale-110 hover:shadow-[0_0_10px_var(--color-g-btw)]"><i class="fa-brands fa-github"></i> Github</a>
-                    </div> 
-                </div>
-
-                </div>
-            </div>
+            
 
     </div>
 </section>
@@ -565,30 +592,42 @@
                     <!-- Timezone-->
                     
                     <div class="p-3.5 rounded-2xl bg-black/20 border border-white/10 flex flex-col gap-1">
-                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                        <p class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
                             <i class="fa-solid fa-globe text-xs text-[var(--color-g-2)]"></i> Timezone
-                        </span>
-                        <span class="text-xs font-semibold text-slate-200">WAT (UTC+1)</span>
+                        </p>
+                        <p class="text-xs font-semibold text-slate-200">WAT (UTC+1)</p>
                     </div>
 
                     <!-- Response Time-->
                     <div class="p-3.5 rounded-2xl bg-black/20 border border-white/10 flex flex-col gap-1">
-                        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                        <p class="text-[10px] font-mono text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
                             <i class="fa-solid fa-clock-rotate-left text-xs text-[var(--color-g-2)]"></i> Response Time
-                        </span>
-                        <span class="text-xs font-semibold text-slate-200">Within 24-48 Hours</span>
+                        </p>
+                        <p class="text-xs font-semibold text-slate-200">Within 24-48 Hours</p>
+                    </div>
+
+                    
+                     <div class="col-span-2 p-3.5 rounded-2xl bg-black/20 border border-white/10 flex items-center justify-between">
+                        <p class="text-[10px] text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-briefcase text-[var(--color-g-2)]"></i> Availability
+                        </p>
+                        <p class="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-g-2)]">
+                            <span class="w-2 h-2 rounded-full bg-[var(--color-g-2)] animate-pulse"></span>
+                            Open for Inquiries
+                        </p>
                     </div>
 
                     <!-- Languages To Use In The Email -->
                     <div class="col-span-2 p-3.5 rounded-2xl bg-black/20 border border-white/10 flex items-center justify-between">
-                        <span class="text-[10px] text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                        <p class="text-[10px] text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
                             <i class="fa-solid fa-language text-xs text-[var(--color-g-2)]"></i> Languages
-                        </span>
-                        <span class="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-g-2)]">
+                        </p>
+                        <p class="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--color-g-2)]">
                             <span class="w-2 h-2 rounded-full bg-[var(--color-g-2)] animate-pulse"></span>
                             English, Arabic, French
-                        </span>
+                        </p>
                     </div>
+                    
 
                 </div>
 
@@ -598,24 +637,24 @@
                     
                     <div class="flex flex-wrap items-center gap-3">
                         <!-- Email -->
-                        <a href="mailto:your-email@domain.com" 
-                            class="flex-1 min-w-[180px] p-3 rounded-xl bg-[var(--bg-color)] border border-white/5 flex items-center justify-between group
-                                    transition-all duration-200 hover:border-[var(--color-g-btw)]/40 hover:bg-[var(--color-g-1)] hover:scale-105 
-                                    active:border-[var(--color-g-btw)]/40 active:bg-[var(--color-g-1)] active:scale-105 ">
+                        <button id="copy-email"
+                            class="flex-1 min-w-[180px] p-3 rounded-xl bg-[var(--bg-color)] border border-white/5 flex items-center justify-between group cursor-pointer
+                                    transition-all duration-200 hover:border-[var(--color-g-btw)]/40 hover:bg-[var(--color-g-1)]
+                                    active:border-[var(--color-g-btw)]/40 active:bg-[var(--color-g-1)] ">
                             <div class="flex items-center gap-2.5">
                                 <i class="fa-solid fa-envelope text-slate-300 text-sm"></i>
-                                <span class="text-xs text-slate-300 group-hover:text-white">Direct Email</span>
+                                <span id="copy-email-text" class="text-sm text-slate-300 group-hover:text-white">abdelmalekde@gmail.com</span>
                             </div>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400 group-hover:text-[var(--color-g-2)] transition-colors"></i>
-                        </a>
+                        </button>
                         <!-- Github Account-->
-                        <a href="https://github.com" 
+                        <a href="https://github.com/Abdelmalekdev" 
                             class="p-3 rounded-xl bg-[var(--bg-color)] border border-white/10 flex items-center gap-2 text-slate-300
                                     transition-all duration-200 hover:border-[var(--color-g-btw)]/40 hover:bg-[var(--color-g-1)] hover:scale-105 hover:text-white 
                                     active:border-[var(--color-g-btw)]/40 active:bg-[var(--color-g-1)] active:scale-105 active:text-white ">
                             <i class="fa-brands fa-github text-sm"></i>
                             <span class="text-xs">GitHub</span>
                         </a>
+
                     </div>
                 </div>
 
@@ -647,7 +686,7 @@
                     <label class="uppercase ml-2 text-sm font-semibold text-slate-300">Service
                         Needed</label>
                     <select name="Message Theme" required
-                        class=" w-full px-4 py-3 rounded-xl border border-white/10 bg-[var(--bg-color)] text-sm
+                        class=" w-full px-4 py-3 rounded-xl border border-white/10 bg-[var(--bg-color)] text-sm cursor-pointer
                         hover:outline-none hover:ring hover:ring-[var(--color-g-btw)]/80
                         focus:outline-none focus:bg-[var(--color-g-1)]/20 focus:ring focus:ring-[var(--color-g-btw)]/80 transition appearance-none">
                         <option value="" disabled selected hidden>▼ Message Theme  </option>
@@ -664,7 +703,7 @@
                 </div>
                 <!-- Submit Button -->
                 <button type="submit" 
-                    class="font-medium text-lg col-span-2 rounded-xl py-1 px-2 bg-[var(--color-g-btw)] border border-white/10 
+                    class="font-medium text-lg col-span-2 rounded-xl py-1 px-2 bg-[var(--color-g-btw)] border border-white/10 cursor-pointer
                             transition-all duration-200 hover:bg-[var(--color-g-1)] hover:scale-105 
                             active:bg-[var(--color-g-1)] active:scale-105">
                     Send Message
@@ -678,7 +717,8 @@
 </section>
 
 <!-- Footer -->
-<footer class="w-full mt-20 border-t border-white/5 bg-[var(--color-g-1)]/10 backdrop-blur-md py-8 px-6">
+<footer id="footer" 
+    class="w-full mt-20 border-t border-white/5 bg-[var(--color-g-1)]/10 backdrop-blur-md py-8 px-6">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
         
         <!-- Logo & Copyrights-->
@@ -697,17 +737,17 @@
 
         <!-- Quick Links -->
         <div class="flex items-center gap-5 text-slate-300">
-            <a href="https://github.com" target="_blank" aria-label="GitHub" class="hover:text-[var(--color-g-btw)] transition-colors p-1">
+            <a href="https://github.com/Abdelmalekdev" target="_blank" aria-label="GitHub" class="hover:text-[var(--color-g-btw)] transition-colors duration-200 p-1">
                 <i class="fa-brands fa-github text-lg"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="hover:text-[var(--color-g-btw)] transition-colors p-1">
+            <a href="https://www.linkedin.com/in/abdelmalek-moghrani-25543335a/" target="_blank" aria-label="LinkedIn" class="hover:text-[var(--color-g-btw)] transition-colors duration-200 p-1">
                 <i class="fa-brands fa-linkedin text-lg"></i>
             </a>
             
             <div class="w-px h-4 bg-white/10"></div>
 
             <!-- Linktree -->
-            <a href="" 
+            <a href="linktree.html" 
                 class="border border-white/10 bg-[var(--bg-color)] rounded-md p-2
                 transition-all duration-200 hover:bg-[var(--color-g-1)] active:bg-[var(--color-g-1)]"><i class="fa-solid fa-share-nodes"></i></a>
 

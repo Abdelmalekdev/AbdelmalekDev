@@ -104,3 +104,51 @@ function updateButtonsState() {
 carousel.addEventListener("scroll", updateButtonsState);
 updateButtonsState();
 
+//SCROLL UP BUTTON IF FOOTER IS IN VIEWPORT
+
+const footer = document.getElementById("footer");
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+
+    return (
+        rect.top < window.innerHeight &&
+        rect.bottom >= 0
+    )
+}
+
+window.addEventListener("scroll", () => {
+    if (isElementInViewport(footer)) {
+        upButton.classList.add("md:bottom-30")
+        upButton.classList.remove("bottom-6")
+    } else {
+        upButton.classList.remove("md:bottom-30")
+        upButton.classList.add("bottom-6")
+    }
+})
+
+//COPY EMAIL BUTTON
+
+const copyEmailButton = document.getElementById("copy-email");
+const copyEmialButtonText = document.getElementById("copy-email-text");
+const emailText = "abdelmalekdev@gmail.com";
+
+copyEmailButton.addEventListener("click", () => {
+
+    navigator.clipboard.writeText(emailText).then(() => {
+
+        copyEmialButtonText.innerText = "Copied! ✓";
+        setTimeout(() => {
+            copyEmialButtonText.innerText = "abdelmalekdev@gmail.com";
+        }, 2000);
+
+    });
+
+});
+
+//COPYRIGHT YEAR CHANGING
+
+const year = document.getElementById("year");
+const currentYear = new Date().getFullYear();
+
+year.innerHTML = currentYear;
