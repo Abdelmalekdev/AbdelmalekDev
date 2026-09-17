@@ -1,5 +1,5 @@
 # 💫 About Me:
-👔I’m Abdelmalek, a Software Engineering student at USTHB.<br>🔭I believe that technology is the best way to help people and spread goodness.<br>🎇My journey began with game development using Godot game Engine.<br>📋Now, My focuse is on software development and exploring how AI can make software smarter.
+👔I’m Abdelmalek M, a Software Engineering student at USTHB.<br>🔭I believe that technology is the best way to help people and spread goodness.<br>🎇My journey began with game development using Godot game Engine.<br>📋Now, My focuse is on software development and exploring how AI can make software smarter.
 
 
 ## 🌐 Socials:
